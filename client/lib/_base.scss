@@ -24,10 +24,27 @@ video#background {
   position: fixed;
   min-height: 100%;
   min-width: 100%;
-  z-index: 1
+  z-index: 1;
+}
+
+.nighttime {
+  -webkit-filter: saturate(2) hue-rotate(15deg) brightness(80%) invert(1);
+}
+
+.nighttimeMobile {
+  background-image: url(img/bokeh-night.jpg);
 }
 
 [ui-view] {
   position: relative;
   z-index: 10;
+}
+
+.wf-loading {
+  opacity: 0;
+}
+
+.wf-active {
+  opacity: 1;
+  transition: opacity 0.1s ease-in;
 }

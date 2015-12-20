@@ -7,4 +7,10 @@ angular.module 'positively'
 	else
   vm.mobile = false
   vm.videoSRC = 'video/bokeh.mp4'
+	
+	nowHour = new Date().getHours()
+	if nowHour >= 6 && nowHour <= 17
+		vm.dayOrNight = 'day'
+	else
+		vm.dayOrNight = 'night'
     
