@@ -1,0 +1,11 @@
+.topbar {
+  padding: 10px 0;
+  background: rgba(255,255,255,0.3);
+  border-bottom: 1px solid white;
+  svg {
+    width: 6em;
+    display: block;
+    fill: white;
+    -webkit-filter: drop-shadow(0px 0px 2px rgba(0,0,0,0.3));
+  }
+}

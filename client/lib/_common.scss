@@ -13,6 +13,31 @@ section {
   border-radius: .3em;
 }
 
+input[type=text], textarea {
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+ 
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 10px rgba(white,.8), inset 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.input-holder {
+  text-align: center;
+  input {
+    width: 98%;
+    color: #4f4f4f;
+    padding: .3em 1em;
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 1em;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.2);
+    background: rgba(255,255,255,0.7);
+  }
+}
+
 // General Utility Classes
 .text-center {
   text-align: center;

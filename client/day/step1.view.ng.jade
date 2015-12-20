@@ -1,3 +1,9 @@
 section
-  h1 step 1
-  a(ui-sref="day.step2") Step 2
+  h1 List a few things that are going well...
+  section
+    .input-holder
+      form
+        input(type='text' autofocus data-ng-model="good.one")
+        input(type='text' data-ng-model="good.two")
+        input(type='text' data-ng-model="good.three")
+      a(ui-sref="day.step2") Step 2
