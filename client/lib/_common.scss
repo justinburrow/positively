@@ -7,16 +7,22 @@ section {
 .btn {
   text-decoration: none;
   cursor: pointer;
-  padding: 1rem;
+  display: inline-block;
+  padding: .5em;
   border: 1px solid #000;
-  border-radius: 2vw;
-  opacity: .8;
-  &:hover {
-    opacity: 1;
-  }
+  border-radius: .3em;
 }
 
 // General Utility Classes
 .text-center {
   text-align: center;
+}
+
+.btn-transition {
+  transition: background-color 0.1s ease-in;
+  transition: border-color 0.1s ease-in;
+  &:hover {
+    transition: background-color 0.2s ease-in;
+    transition: border-color 0.2s ease-in
+  }
 }

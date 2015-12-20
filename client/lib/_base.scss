@@ -4,6 +4,7 @@ $visual-grid: true;
 
 html {
   font-size: 16px;
+  font-family: 'Oswald', 'Helvetica Neue', 'Helvetica', sans-serif;;
   @include media(max-width 1024px) {
     width: 100%;
     height: 100%;
