@@ -1,0 +1,22 @@
+// Structural Styling
+section {
+  @include outer-container;
+}
+
+// UI Elements
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1rem;
+  border: 1px solid #000;
+  border-radius: 2vw;
+  opacity: .8;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+// General Utility Classes
+.text-center {
+  text-align: center;
+}

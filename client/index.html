@@ -2,9 +2,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Positively</title>
-  <base href="/">
+  <base href="/"> 
 </head>
 <body ng-app="positively" ng-controller="MainCtrl as main">
+  <video ng-if="main.mobile == false" autoplay loop id="background">
+    <source src="{{main.videoSRC}}" type="video/mp4">
+  </video>
   <div ui-view="">
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>

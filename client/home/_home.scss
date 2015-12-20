@@ -1,0 +1,5 @@
+.logo {
+  @include span-columns(8);
+  @include shift(2);
+  margin-top: 2vw;
+}
