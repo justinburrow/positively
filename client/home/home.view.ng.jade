@@ -3,5 +3,5 @@ section
     use(xlink:href="img/positively.svg#positively")
 
 section.text-center
-  a.btn.btn--home(data-ng-if="main.dayOrNight == 'daytime'" href="/day-rating/step-1") Set the Tone for Today
-  a.btn.btn--home(data-ng-if="main.dayOrNight == 'nighttime'" href="/night-rating") Rate Your Day
+  a.btn.btn--home(data-ng-if="main.dayOrNight == 'daytime'" ui-sref="day.step1") Set the Tone for Today
+  a.btn.btn--home(data-ng-if="main.dayOrNight == 'nighttime'" ui-sref="night") Rate Your Day

@@ -13,4 +13,6 @@ angular.module 'positively'
 		vm.dayOrNight = 'daytime'
 	else
 		vm.dayOrNight = 'nighttime'
+	
+	vm.dayOrNight = 'daytime'
     

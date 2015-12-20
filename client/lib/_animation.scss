@@ -1,0 +1,45 @@
+.slide-left {
+  position: relative;
+  &.ng-enter, &.ng-leave {
+    transition: transform 0.5s ease-in-out;
+  }
+  &.ng-enter {
+    z-index: 101;
+    transform: translateX(100%);
+  }
+  &.ng-enter.ng-enter-active {
+    transform: translateX(0);
+  }
+  &.ng-leave {
+    z-index: 100;
+    transform: translateX(0);
+  }
+  &.ng-leave.ng-leave-active {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+  }
+}
+
+.fade-out {
+  &.ng-enter, &.ng-leave {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity .2s ease-in-out;
+  }
+  &.ng-enter {
+    opacity: 0;
+  }
+  &.ng-enter-active {
+    opacity: 1;
+  }
+  &.ng-leave {
+    opacity: 1;
+  }
+  &.ng-leave-active {
+    opacity: 0;
+  }
+}
