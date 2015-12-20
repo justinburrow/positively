@@ -2,6 +2,6 @@ angular.module 'positively'
 .config ($stateProvider) ->
   $stateProvider
   .state 'day',
-    url: '/daytime'
-    templateUrl: 'client/day/day.view.html'
+    url: '/day-rating/step1'
+    templateUrl: 'client/day/day-step1.view.html'
     controller: 'DayCtrl as day'

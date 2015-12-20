@@ -32,12 +32,15 @@ video#background {
 }
 
 .nighttimeMobile {
-  background-image: url(img/bokeh-night.jpg);
+  @include media(max-width 1024px) {
+    background-image: url(img/bokeh-night.jpg);
+  }
 }
 
 [ui-view] {
   position: relative;
   z-index: 10;
+  overflow: hidden;
 }
 
 .wf-loading {

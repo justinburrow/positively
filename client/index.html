@@ -4,9 +4,9 @@
   <title>Positively</title>
   <base href="/"> 
 </head>
-<body data-ng-app="positively" data-ng-controller="MainCtrl as main" data-ng-class="{nighttimeMobile: main.dayOrNight == 'night'}">
+<body data-ng-app="positively" data-ng-controller="MainCtrl as main" data-ng-class="{nighttimeMobile: main.dayOrNight == 'nighttime'}">
   
-  <video data-ng-if="main.mobile == false" data-ng-class="{nighttime: main.dayOrNight == 'night'}" autoplay loop id="background">
+  <video data-ng-if="main.mobile == false" data-ng-class="{nighttime: main.dayOrNight == 'nighttime'}" autoplay loop id="background">
     <source src="{{main.videoSRC}}" type="video/mp4">
   </video>
   

@@ -10,7 +10,7 @@ angular.module 'positively'
 	
 	nowHour = new Date().getHours()
 	if nowHour >= 6 && nowHour <= 17
-		vm.dayOrNight = 'day'
+		vm.dayOrNight = 'daytime'
 	else
-		vm.dayOrNight = 'night'
+		vm.dayOrNight = 'nighttime'
     
