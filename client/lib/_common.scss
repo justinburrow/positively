@@ -13,6 +13,30 @@ section {
   border-radius: .3em;
 }
 
+.btn--next, .btn--prev, .btn--submit {
+  font-size: 1.5em;
+  margin-top: 1em;
+  color: white;
+  @include btnColor($cerulean)
+  @include media(max-width 1024px) {
+    font-size: 1em;
+  }
+}
+
+.btn--next, .btn--submit {
+  float: right;
+  i {
+    margin-left: .3em;
+  }
+}
+
+.btn--back {
+  float: left;
+  i {
+    margin-right: .3em;
+  }
+}
+
 input[type=text], textarea {
   transition: all 0.3s ease-in-out;
   outline: none;
@@ -36,6 +60,11 @@ input[type=text]:focus, textarea:focus {
     box-shadow: inset 0px 0px 10px rgba(0,0,0,0.2);
     background: rgba(255,255,255,0.7);
   }
+}
+
+.progress-buttons {
+  width: 98%;
+  margin: 0 auto;
 }
 
 // General Utility Classes
