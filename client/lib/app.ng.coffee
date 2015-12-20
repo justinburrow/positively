@@ -1,4 +1,3 @@
-'use strict'
 angular.module 'positively', [
   'angular-meteor',
   'ui.router',

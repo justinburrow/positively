@@ -1,0 +1,6 @@
+@import '../lib/main.scss';
+
+.logo {
+  @include span-columns(10);
+  @include shift(1);
+}

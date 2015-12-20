@@ -1,0 +1,5 @@
+@import 'main.scss';
+
+section {
+  @include outer-container;
+}
