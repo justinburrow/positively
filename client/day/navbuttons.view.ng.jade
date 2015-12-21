@@ -1,0 +1,7 @@
+.progress-buttons
+  a.btn.btn--back(data-ng-if="day.prev" data-ui-sref="{{day.prev}}" data-ng-click="navbuttons.setTransition()")
+    i.fa.fa-arrow-circle-left
+    | Back
+     
+  a.btn.btn--next(data-ng-if="day.next" data-ui-sref="{{day.next}}" data-ng-click="navbuttons.setTransition()") Next 
+    i.fa.fa-arrow-circle-right

@@ -1,5 +1,5 @@
 @import "{wolves:bourbon}/bourbon";
-$visual-grid: true;
+//$visual-grid: true; - shows grid positioning
 @import "{wolves:neat}/neat";
 
 html {
@@ -43,7 +43,7 @@ video#background {
 [ui-view] {
   position: relative;
   z-index: 10;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .wf-loading {
