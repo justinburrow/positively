@@ -1,6 +1,14 @@
 // Structural Styling
 section {
+  overflow: hidden;
   @include outer-container;
+}
+
+.half {
+  @include span-columns(6);
+  @include media(max-width $bigMobile) {
+    @include span-columns(12);
+  }
 }
 
 // UI Elements
@@ -37,12 +45,12 @@ section {
   }
 }
 
-input[type=text], textarea {
+input[type=text], input[type=email], input[type=password], textarea {
   transition: all 0.3s ease-in-out;
   outline: none;
 }
  
-input[type=text]:focus, textarea:focus {
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus {
   box-shadow: 0 0 10px rgba(white,.8), inset 0px 0px 10px rgba(0,0,0,0.2);
 }
 
@@ -68,6 +76,13 @@ input[type=text]:focus, textarea:focus {
   margin: 0 auto;
 }
 
+.left-link {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  text-decoration: underline;
+}
+
 // General Utility Classes
 .text-center {
   text-align: center;
@@ -84,4 +99,8 @@ input[type=text]:focus, textarea:focus {
 
 .position-relative {
   position: relative;
+}
+
+.position-absolute {
+  position: absolute;
 }
