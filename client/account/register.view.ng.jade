@@ -1,17 +1,17 @@
 section
   h1 Create an account
   .input-holder
-    form
+    form(data-ng-submit="register.register()")
       section
         .half
-          input(type="text" data-ng-model="create.fName" placeholder="First Name")
+          input(type="text" data-ng-model="register.fName" placeholder="First Name")
         .half
-          input(type="text" data-ng-model="create.lName" placeholder="Last Name")
+          input(type="text" data-ng-model="register.lName" placeholder="Last Name")
       section
         .half
-          input(type="email" data-ng-model="create.email" placeholder="Email Address")
+          input(type="email" data-ng-model="register.email" placeholder="Email Address")
         .half
-          input(type="password" data-ng-model="create.password" placeholder="Set Your Password")
+          input(type="password" data-ng-model="register.password" placeholder="Set Your Password")
       section.position-relative
         a.left-link(ui-sref="login") Already have an account?  Login
-        .btn.btn--submit Create my account
+        button.btn.btn--submit(type="submit") Create my account

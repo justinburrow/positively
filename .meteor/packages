@@ -26,3 +26,4 @@ ndxbxrme:ng-coffeescript
 angular:angular-animate
 johnantoni:meteor-normalize
 fortawesome:fontawesome
+accounts-password

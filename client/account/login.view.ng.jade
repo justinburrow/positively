@@ -1,12 +1,12 @@
 section
   h1 Login to your account
   .input-holder
-    form
+    form(data-ng-submit="login.login()")
       section
         .half
-          input(type="email" data-ng-model="create.email" placeholder="Email Address")
+          input(type="email" data-ng-model="login.email" placeholder="Email Address")
         .half
-          input(type="password" data-ng-model="create.password" placeholder="Password")
+          input(type="password" data-ng-model="login.password" placeholder="Password")
       section.position-relative
         a.left-link(ui-sref="register") Don't have an account?  Create one
-        .btn.btn--submit Let's get started
+        button.btn.btn--submit(type="submit") Let's get started

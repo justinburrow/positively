@@ -1,5 +1,7 @@
 .topbar
   section
-    a(ui-sref="home")
+    a.float-left(ui-sref="home")
       svg(viewbox="0 0 1004.43 357.06")
         use(xlink:href="img/positively.svg#positively")
+    .welcome.float-right(data-ng-if="$root.currentUser") Welcome, {{$root.currentUser.profile.first_name}} {{$root.currentUser.profile.last_name}}
+      a(data-ng-click="main.logout()") (logout)

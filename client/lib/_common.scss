@@ -19,6 +19,9 @@ section {
   padding: .5em;
   border: 1px solid #000;
   border-radius: .3em;
+  &:focus {
+    outline: none;
+  }
 }
 
 .btn--next, .btn--back, .btn--submit {
@@ -103,4 +106,12 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, tex
 
 .position-absolute {
   position: absolute;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
 }
